@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FBF2CF;
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/*Skip To Content*/
+.skip-link {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  padding: 8px;
+  background-color: maroon;
+  color: blue;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.header {
+  transition: min-height 0.3s;
+}
+
+.header__menu {
+  font-size: 33.1px;
+  margin: 10px auto;
+  display: block;
+  width: 44px;
+  height: 44x;
+  text-decoration: none;
+  background-color: #A1C298;
+  color: #557153;
+  border-radius: 10px;
+  border: none;
+}
+
+.nav-bar .menubar .list-menubar li a {
+  text-decoration: none;
+  color: #557153;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.nav-bar .menubar .list-menubar .nav-item a .href {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.nav-bar .menubar .list-menubar li a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar .nav-logo h1 {
+  font-weight: 600;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-image_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .overlay .hero-inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.jumbotron .overlay .hero-inner .hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #557153;
+}
+
+.jumbotron .overlay .hero-inner .hero-desc {
+  color: #557153;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.jumbotron .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+  min-height: 300px;
+  background-color: #E6E5A3;
+  opacity: 75%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+main {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+}
+
+#favorite .content .title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #557153;
+}
+
+#favorite .content .desc {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+}
+
+.content .list-place .card-grid {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.content .list-place {
+  margin-top: 40px;
+}
+
+/* card item */
+.card-item {
+  box-shadow: 0 4px 8px 0 black;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-item__content {
+  padding: 16px 32px 32px 32px;
+}
+
+.card-item__thumbnail {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-item_city {
+  font-size: 14px;
+  text-transform: capitalize;
+  transform-box: inherit;
+  color: #999;
+}
+
+.card-item_city .txt-rating {
+  color: red;
+}
+
+.card-item__title {
+  font-weight: 500;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+}
+
+.card-item__title:hover {
+  opacity: 0.5;
+}
+
+.card-item__title a {
+  text-decoration: none;
+  color: inherit;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.card-item__description {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-item__btn_read {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #557153;
+  color: #E6D5A3;
+  border: 2px solid #557153;
+  min-width: 44px;
+  min-height: 44px;
+  margin-top: 20px;
+}
+
+.card-item__btn_read:hover {
+  background-color: transparent;
+  color: #557153;
+  cursor: pointer;
+}
+
+.rating {
+  color: orange;
+}
+
+footer {
+  background-color: #E6E5A3;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  color: #557153;
+  width: 100%;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
